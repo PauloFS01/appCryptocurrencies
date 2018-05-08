@@ -1,0 +1,58 @@
+.siglaCabecario{
+	width: 33%;
+	padding-top: 0.2em;
+	float: left;
+	margin-left:0.8em;
+	font-size: 1.5em;
+	height:100%;
+}
+.valorCabecario{
+	width: 33%;
+	padding-top: 0.2em;
+	float: right;
+	margin-right: 0.8em;
+	font-size: 1.5em;
+	width: 30%;
+	text-align: right;
+	height: 100%;
+}
+.moedaCabecario{
+	width: 33%;
+	padding-top: 0.2em;
+	width: 30%;
+	float: right;
+	font-size: 1.5em;
+	text-align: center;
+	height:100%;
+}
+.linhaBlockchain{
+	font-size: 1em;
+}
+.siglaBlokchain{
+  position: relative;
+  width: 33%;
+  float: left;
+  padding-top: 0.5em;
+}
+.valorBlokchain{
+	width: 33%;
+	position: relative;
+	padding-top: 0.5em;
+	float: right;
+}
+.symbolBlockcahin{
+	width: 33%;
+	height: 100%;
+	position: relative;
+	padding-top: 0.5em;	
+	float: left;	
+	text-align: center;
+}
+.linhaBlockchain{
+	height: 50px;
+}
+.numerico{
+	float: right;
+}
+
+

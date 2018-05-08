@@ -1,0 +1,34 @@
+.currenciesLinha{
+	height: 40px;
+}
+.divLineCurrencies{
+	padding-top: 10px;
+	height: 2em;
+	width: 100%;
+}
+.currenciesNome{
+	width: 33%;
+	height: 100%;
+	float: left;
+	margin-left: 4px;
+}
+.curenciesBtc{
+	width: 35%;
+	height: 100%;
+	float: left;
+	text-align: center;
+}
+.curenciesValor{
+	width: 29%;
+	height: 100%;
+	float: right;
+	text-align: right;
+	margin-right: 6px;
+}
+.currenciesCabecario{
+	padding-top: 0.2em;
+	float: left;
+	font-size: 1.5em;
+	height:100%;
+	margin-left: 4px;
+}

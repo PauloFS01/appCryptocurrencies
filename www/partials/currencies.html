@@ -1,0 +1,24 @@
+<ul class="collection ">
+  <li class="cabecalhoLista brown lighten-5 brown-text">
+    <div class="currenciesCabecario">Moeda</div>
+    <div class="valorCabecario">$</div>
+    <div class="moedaCabecario">BTC</div>
+  </li>
+<li class="bordaBase currenciesLinha  grey lighten-5" ng-repeat="cryp in cryptoCurrencies">    
+    <div class="divLineCurrencies">
+      <div  class="currenciesNome">
+        <span class="blue-grey-text lighten-2"> {{cryp.nome}} </span>              
+      </div>
+      <div  class="curenciesBtc">
+        <span class=""> {{cryp.valorBTC | number:8}} </span>              
+      </div>      
+      <div class="curenciesValor" >
+        <span class="">{{ cryp.valorUSD | number:2 }} </span>                            
+      </div>
+    </div> 
+</li>
+
+  <li class="disaclamer brown lighten-5">Fonte: cryptocompare.com/</li>
+
+</ul> 
+ <div class="borda mensagemErro hide "> <p>{{mensagem}}</p> </div>  

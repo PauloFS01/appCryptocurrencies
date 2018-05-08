@@ -1,0 +1,132 @@
+.meuContainer{
+	margin-top: 5.5em;
+	margin-bottom: 4em;
+}
+.divRadio{
+	width: 100%;
+	text-align: center;
+	margin: 0;
+}
+.borda{
+	border: 1px solid red;
+}
+.bordaInferior{
+	border-bottom: 1px solid #d7ccc8;
+}
+.bordaorange{
+	border: 1px solid orange;
+}
+.bordaDireta{
+	border-left: 1px solid #e0e0e0;
+}
+.disaclamer{
+	font-size: 0.7em;
+	color: black;
+	text-align: center;
+	height: 2.5em;
+	padding: 0.7em;
+}
+.cabecalhoLista{	
+	width: 100%;
+	height: 2em;
+	font-size: 0.7em;
+}
+.siglaCabecario{
+	width: 33%;
+	padding-top: 0.2em;
+	float: left;
+	margin-left:0.8em;
+	font-size: 1.5em;
+	height:100%;
+}
+.valorCabecario{
+	width: 33%;
+	padding-top: 0.2em;
+	float: right;
+	margin-right: 0.8em;
+	font-size: 1.5em;
+	width: 30%;
+	text-align: right;
+	height: 100%;
+}
+.moedaCabecario{
+	width: 33%;
+	padding-top: 0.2em;
+	width: 30%;
+	float: right;
+	font-size: 1.5em;
+	text-align: center;
+	height:100%;
+}
+.linhaBlockchain{
+	font-size: 1em;
+}
+.siglaBlokchain{
+  position: relative;
+  width: 33%;
+  float: left;
+  padding-top: 0.5em;
+}
+.valorBlokchain{
+	width: 33%;
+	position: relative;
+	padding-top: 0.5em;
+	float: right;
+}
+.symbolBlockcahin{
+	width: 33%;
+	height: 100%;
+	position: relative;
+	padding-top: 0.5em;	
+	float: left;	
+	text-align: center;
+}
+.linhaBlockchain{
+	height: 50px;
+}
+.numerico{
+	float: right;
+}
+#loadScreen{
+	background: rgba(1, 0 , 1, 0.6);
+	z-index: 9999;	
+	color: white;
+}
+.divLoad{
+	width: 100%;
+	height: 100%;
+	top: 0;
+	position: fixed;
+	overflow: auto;	
+	padding-top:60%;
+	padding-left: 40%;
+}
+.mensagemErro{
+	width: 100%;
+	height: 1.5em;
+	background-color: #ef9a9a;
+	color: white;
+	font-size: 1.1em;
+	padding-top: 0.1em;
+	padding-left: 25%;
+	position: absolute;
+	z-index: 9999;
+}
+.mensagemErroFG{
+	width: 100%;
+	height: 1.5em;
+	background-color: #ef9a9a;
+	color: white;
+	padding-top: 0.1em;
+	padding-left: 25%;	
+	font-size: 1.1em;
+}
+.mensagemErroChart{
+	width: 100%;
+	height: 100%;
+	background-color: #ffebee;
+	color: #424242;
+	padding-top: 0.1em;
+	padding-left: 25%;	
+	font-size: 1.1em;	
+}

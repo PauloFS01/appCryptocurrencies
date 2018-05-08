@@ -1,0 +1,28 @@
+
+.divTitulo{
+	text-align: center;
+	width: 100%;
+	height: 70px;
+	position: fixed;
+    top: 0;
+    z-index: 2;
+    transition:All 0.3s ease;
+}
+.botoesNav{
+	width: 25%;
+	height: 100%;
+	color: white;
+	float: left;
+	padding-top: 15px;
+}
+.menuHide{
+	margin-top: -80px;
+	transition:All 0.5s ease;
+}
+.toobarHide{
+	margin-right: -150px;
+	transition:All 0.5s ease;
+}
+.fixed-action-btn{
+	transition:All 0.5s ease;
+}

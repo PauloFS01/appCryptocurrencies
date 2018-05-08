@@ -1,0 +1,61 @@
+
+<div class="chartCard grey lighten-5"
+ng-controller="ChartController">
+
+  <div class="card-image">
+    <div style="position: relative; height:100%; width:100%">
+      <canvas class="chartFonts" id="myChart"></canvas>
+    </div>
+   
+  </div> 
+    <div class="chartBotoes brown lighten-5">
+
+          <div class="botoesChart">
+            <input class="with-gap" ng-model="endpoint" name="group1" type="radio" id="test1" value="{{periodoOP[0].valor}}" 
+            ng-change="novaConsulta(endpoint)" checked />
+            <label for="test1"> {{periodoOP[0].descricao}} </label>
+          </div>
+
+          <div class="botoesChart ">
+            <input class=" with-gap " ng-model="endpoint" name="group1" type="radio" id="test2" value="{{periodoOP[1].valor}}"
+            ng-change="novaConsulta(endpoint)"/>
+            <label for="test2">{{periodoOP[1].descricao}}</label>         
+          </div>
+
+          <div class="botoesChart ">    
+            <input class="with-gap " ng-model="endpoint"  name="group1" type="radio" id="test3" value="{{periodoOP[2].valor}}"
+            ng-change="novaConsulta(endpoint)"/>
+            <label for="test3">{{periodoOP[2].descricao}}</label>
+          </div>  
+
+    </div>
+     <div class="borda mensagemErroChart hide"> <p>{{mensagem}}</p> </div>
+</div>
+
+<ul class="collection">
+
+  <li class="cabecalhoLista brown-text brown lighten-5">
+
+    <div class="siglaCabecario">Sigla</div>
+    <div class="valorCabecario">Valor</div>
+    <div class="moedaCabecario">Moeda</div>
+
+  </li>
+
+  <li class="linhaBlockchain collection-item grey lighten-5" ng-repeat="result in resultado">    
+    <div class="siglaBlokchain dadosPrincipais blue-grey-text lighten-2">
+      <span> {{chaves[$index]}}</span> 
+    </div>
+    
+    <div class="symbolBlockcahin">
+      <span class=" amber-text darken-1">{{result.symbol}}</span>      
+    </div>
+
+    <div class="valorBlokchain blue-grey-text lighten-2">  
+      <span class="numerico">{{result.last | number:0}}</span>
+    </div>  
+  </li>
+
+</ul>
+
+ <div class="borda mensagemErro hide "> <p>{{mensagem}}</p> </div>  

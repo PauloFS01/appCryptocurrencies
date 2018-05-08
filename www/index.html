@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app="ApiExchanges">
+    <head>
+       
+        <meta charset="UTF-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">  
+        <link rel="stylesheet" href="css/reset.css"> 
+
+       <!-- framework css-->
+        <link rel="stylesheet" href="icons/material.css">
+        <link rel="stylesheet" href="css/materialize.min.css">
+        <link rel="stylesheet" href="css/materialize.css">
+        <!--meus css-->
+        <link rel="stylesheet" href="css/principal.css">
+        <link rel="stylesheet" href="css/cards.css">
+        <link rel="stylesheet" href="css/nav.css">
+        <link rel="stylesheet" href="css/orderBoks.css">
+        <link rel="stylesheet" href="css/charts.css">
+        <link rel="stylesheet" href="css/Blockchain.css">
+        <link rel="stylesheet" href="css/exchanges.css">
+        <link rel="stylesheet" href="css/currencies.css">
+        <script src="js/lib/chartjs.js"></script>
+         
+        <title>Hello World</title>
+        <!--frameworks scripts-->
+
+
+        <script src="js/lib/angular.min.js"></script>
+        <script src="js/lib/angular-animate.min.js"></script>
+        <script src="js/lib/angular-route.min.js"></script>
+        <script src="js/lib/angular-resource.min.js"></script>
+
+        <!--meus scripts-->
+        <script type="text/javascript" src="js/mainAngular.js"></script> 
+        <script type="text/javascript" src="js/services/chart-seach.js"></script> 
+        <script type="text/javascript" src="js/services/chart2-seach.js"></script> 
+        <script type="text/javascript" src="js/services/coin-seach.js"></script> 
+        <script type="text/javascript" src="js/services/currencies-seach.js"></script> 
+        <script type="text/javascript" src="js/services/order-seach.js"></script> 
+        <script type="text/javascript" src="js/controllers/exchangesbr-controller.js"></script>
+        <script type="text/javascript" src="js/controllers/exchangesforeign-controller.js"></script>
+        <script type="text/javascript" src="js/controllers/chart2-controller.js"></script>
+        <script type="text/javascript" src="js/controllers/chart-controller.js"></script>
+        <script type="text/javascript" src="js/controllers/orders-controller.js"></script>
+        <script type="text/javascript" src="js/controllers/blockchain-controller.js"></script>
+        <script type="text/javascript" src="js/controllers/currencies-controller.js"></script>
+
+    </head>
+    
+    <body class="brown lighten-4">
+        <div class="divLoad hide" id="loadScreen"> <img src="img/loading.svg"> </div>
+        <div class="divLoad hide" id="errorScreen"><p id="paragrafo"></p></div>
+
+    <nav class="nav-wrapper brown lighten-2 divTitulo">
+        <div class=" botoesNav waves-effect waves-black">
+            <a href="#/currencies" class="material-icons white-text"> compare_arrows </a>
+        </div> 
+        <div class=" botoesNav waves-effect waves-black">
+            <a href="#/" class="material-icons white-text">transform</a>
+        </div>
+        <div class=" botoesNav waves-effect waves-black">
+            <a href="#/blockchain" class="material-icons white-text">vpn_lock</a>
+        </div>
+        <div class=" botoesNav waves-effect waves-black">
+            <a href="#/orders" class="material-icons white-text">book</a>
+        </div>                  
+    </nav>
+
+    <div class="meuContainer">
+
+        <div class="fixed-action-btn toolbar toobarHide">
+            <a class="brown lighten-2 btn-floating btn-large red">
+              <i class="large material-icons">menu</i>
+            </a>
+            <ul>
+              <li class="waves-effect waves-light"><a href="#/currencies"><i class="material-icons">compare_arrows</i></a></li>
+              <li class="waves-effect waves-light"><a href="#/"><i class="material-icons">transform</i></a></li>
+              <li class="waves-effect waves-light"><a href="#/blockchain"><i class="material-icons">thumbs_up_down</i></a></li>
+              <li class="waves-effect waves-light"><a href="#/orders"><i class="material-icons">book</i></a></li>
+            </ul>
+        </div>
+
+        <ng-view></ng-view>           
+
+    </div>
+
+        <script src="js/jquery.js"></script>
+        <script src="js/materialize.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+
+</html>

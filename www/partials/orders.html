@@ -1,0 +1,14 @@
+
+<div class="grey lighten-5">
+	<ul>
+		<li class="cabecalhoLista brown-text brown lighten-5"> <span id="orbkNome">Exchange</span> <span id="orbkOfertas">Compra</span> <span id="orbkLances">Venda</span> </li>
+		<li class="bordaInferior itensLista " ng-repeat= " order in ordens"> 
+			<span class="blue-grey-text itemNome"> {{order.nome}}<br> <br><span class="itemVolume">Volume:</span> </span> 
+			<span class="itemOferta"> {{order.compra | number:0}} <br> <br> <span class="itemVolume">{{order.volCompra | number:0}}</span> </span>
+			<span class="itemLance"> {{order.venda | number:0}}<br> <br><span class="itemVolume">{{order.volVenda | number:0}}</span> </span> 
+		</li>
+		<li class="linhaBase brown lighten-5"> </li>
+	</ul>
+
+</div>
+ <div class="borda mensagemErro hide "> <p>{{mensagem}}</p> </div> 

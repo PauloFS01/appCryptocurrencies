@@ -1,0 +1,45 @@
+
+ <div class="chartCard grey lighten-5"
+  ng-controller="Chart2Controller">
+      <div class="card-image">
+        <div class="" style="position: relative; height:100%; width:100%">
+          <canvas class="chartFonts" id="myChart2"></canvas>
+        </div>
+        
+      </div> 
+    <div class="disaclamer brown lighten-5"> {{disaclamer}} </div>
+    <div class="borda mensagemErroChart hide "> <p>{{mensagem}}</p> </div>
+  </div>
+
+<div> 
+
+
+
+<ul class="collection">
+
+  <li class="brown lighten-5 brown-text"> <span class="cabecarioTitulo">Exchanges Brasileiras</span> 
+    <span class="cabecarioDescricao">Valor 24Hs</span></li>
+
+  <li class="collection-item grey lighten-5" ng-repeat="exchange in exchanges" >    
+    <div class="divLine">
+      <div  class="  dadosPrincipais">
+
+        <span class="title blue-grey-text lighten-2"><h5>{{exchange.nome}}</h5></span> 
+        <span class=" brown-text lighten-2"><span class="amber-text darken-1">R$:</span> {{exchange.last | number:0}}</span>              
+      </div>
+      <div class="dadosSecundarios" >
+        <div class="dadosPercentoais">
+           <i class="dadosSecundarios {{exchange.classe}} small material-icons"> swap_vert</i><span> {{exchange.percentual}} %</span>
+        </div>
+        <p><span class="brown-text">Menor:{{exchange.low | number:0}}</span> <br>
+         <span class="brown-text">Maior: {{exchange.high | number:0}}</span>  
+        </p>              
+                                   
+      </div>  
+    </div> 
+  </li>
+    <li class="disaclamer brown lighten-5">Fonte: bitValor.com</li>
+</ul>  
+
+</div>
+<div class="borda mensagemErro hide "> <p>{{mensagen}}</p> </div>
